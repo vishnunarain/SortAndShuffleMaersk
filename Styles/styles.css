@@ -1,0 +1,124 @@
+#card1, #card8{
+    border-left: #6f98a8 solid 10px;
+}
+#card2, #card4{
+    border-left: #2b8ead solid 10px;
+}
+#card3, #card5, #card9{
+    border-left: #2f454e solid 10px;
+}
+#card6, #card7{
+    border-left: #bfbfbf solid 10px;
+}
+
+button{
+    box-sizing: border-box;
+    background-color: #72c3dc;
+    border-color: #72c3dc;
+    border-radius: 10%;
+    color: #ffffff;
+    height: 80%;
+}
+
+.footer{
+    display:grid;
+    place-items: center;
+    grid-area: footer;
+}
+.button-pannel{
+    grid-area: button-panel;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.4rem;
+    padding: 0 11vw 0 11vw;
+
+}
+.card-deck{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: card-deck;
+    padding: 15px;
+    grid-row-gap: 0.4rem;
+    
+}
+.card{
+    display: grid;
+    place-items:center;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+header{
+    background-color: #333333;
+    display:grid;
+    place-items: center;
+    color: #ffffff;
+    grid-area: header;
+    font-size: 2em;
+
+}
+body{
+    height: 95vh;
+    background-color: #ffffff;
+    border: solid 0.5em;
+    display: grid;
+    grid-template-rows: 7% 8% 71% 7%;
+    grid-row-gap: 1rem;
+    grid-template-areas: 
+    "header"
+    "button-panel"
+    "card-deck"
+    "footer";
+}
+
+@media (min-width: 960px) {
+    body{
+        background-color: #efefef;
+        border:none;
+        grid-template-rows: 2% 96% 2%;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "header  header"
+        "card-deck button-panel"
+        "footer footer"
+    }
+    header{
+        background-color: #efefef;
+        font-size: 1em;
+        color: #333333;
+
+    }
+    .card-deck{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 0rem;
+        padding:0px;
+        border-top: #bfbfbf 4px solid;
+    }
+    .button-pannel{
+        border-top: #bfbfbf 4px solid;
+        grid-template-columns: 1fr;
+        padding: 1vw 1vw 46vw 2vw; 
+    }
+    .card{
+        font-size: 3em;
+        color: #ffffff;
+    }
+
+    #card1, #card8{
+    border-left:none;
+    background-color: #6f98a8;
+    }
+    #card2, #card4{
+    border-left: none;
+    background-color: #2b8ead;
+    }
+    #card3, #card5, #card9{
+    border-left:none;
+    background-color: #2f454e;
+    }
+    #card6, #card7{
+    border-left:none;
+    background-color: #bfbfbf;
+    }
+    
+}
