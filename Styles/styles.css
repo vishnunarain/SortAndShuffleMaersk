@@ -1,3 +1,7 @@
+8/*Begining of mobile first layout will render layout till 960 px width
+*/
+
+/*styles for each card for phone screen*/
 #card1, #card8{
     border-left: #6f98a8 solid 10px;
 }
@@ -10,7 +14,9 @@
 #card6, #card7{
     border-left: #bfbfbf solid 10px;
 }
+/*end of styles for each card*/
 
+/*common styles for the action button*/
 button{
     box-sizing: border-box;
     background-color: #72c3dc;
@@ -19,7 +25,8 @@ button{
     color: #ffffff;
     height: 80%;
 }
-
+/*end of button styles for phone layout*/
+/*Begining of the phone layout template*/
 .footer{
     display:grid;
     place-items: center;
@@ -70,8 +77,12 @@ body{
     "card-deck"
     "footer";
 }
+/*End of phone layout template*/
 
+
+/*Styles for desktop layout*/
 @media (min-width: 960px) {
+    /*basic template*/
     body{
         background-color: #efefef;
         border:none;
@@ -103,6 +114,9 @@ body{
         font-size: 3em;
         color: #ffffff;
     }
+    /* End of basic template*/
+    
+    /*Style for each card*/
 
     #card1, #card8{
     border-left:none;
@@ -120,5 +134,5 @@ body{
     border-left:none;
     background-color: #bfbfbf;
     }
-    
+    /*End of desktop layout*/
 }
