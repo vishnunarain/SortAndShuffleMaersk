@@ -108,7 +108,7 @@ body{
     .button-pannel{
         border-top: #bfbfbf 4px solid;
         grid-template-columns: 1fr;
-        padding: 1vw 1vw 46vw 2vw; 
+        padding: 1vw 1vw 35vw 2vw; 
     }
     .card{
         font-size: 3em;
